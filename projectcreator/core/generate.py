@@ -12,7 +12,7 @@ class Generate:
 
 if __name__ == '__main__':
     gen = Generate()
-    x = gen.create_project(path)
+    x = gen.create_project(gen.path_handler)
     print(x)
 
 
