@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class PathHandler:
-    data_path = r'./data/'
+    data_path = r"./data/"

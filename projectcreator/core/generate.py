@@ -1,18 +1,18 @@
 from dataclasses import dataclass
 from projectcreator.utils.handlers import PathHandler
+import os
+
 
 @dataclass
 class Generate:
     path_handler: PathHandler
-    
-    def create_project(path_handler: PathHandler):
-        output = path_handler.data_path
-        print(output)
 
+    def create_file(self, file_name):
+        data_path = self.path_handler.data_path
+        path_to_file = data_path + file_name
 
-if __name__ == '__main__':
-    gen = Generate()
-    x = gen.create_project(gen.path_handler)
-    print(x)
+        with open(path_to_file, "x") as new_file:
+            pass
 
-
+    def create_folder(self):
+        data_path = self.path_handler.data_path
