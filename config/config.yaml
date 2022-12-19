@@ -1,0 +1,85 @@
+default_project:
+  folder_base:
+    - .vscode:
+      - settings.json
+      - launch.json
+    - config:
+      - config.yaml
+    - data:
+      - database.db
+    - docker:
+      - Dockerfile
+    - docs
+    - lib
+    - logs
+    - src:
+      - tests:
+        - fixtures:
+          - __init__.py
+        - e2e:
+          - __init__.py
+      - core:
+        - __init__.py
+      - utils:
+        - __init__.py
+    - tools:
+      - __init__.py
+  file_base:
+    - main.py
+    - .coverage
+    - .gitignore
+    - .flake8
+    - LICENSE
+    - pytest.ini
+    - README.md
+    - requirements.txt
+    - __init__.py
+
+flask_project:
+  folder_base:
+    - src:
+      - tests:
+        - fixtures:
+          - __init__.py
+        - e2e:
+          - __init__.py
+        - __init__.py
+      - core:
+        - __init__.py
+      - static:
+        - img:
+        - index.js
+        - main.css
+      - templates:
+        - home.html
+        - layout.html
+      - utils:
+        - __init__.py
+      - views:
+        - views.py
+      - auth.py
+      - forms.py
+      - models.py
+      - __init__.py
+    - config:
+      - config.yaml
+    - data:
+      - database.db
+    - docker
+    - docs
+    - lib
+    - logs
+    - tools
+    - .vscode:
+      - settings.json
+      - launch.json
+  file_base:
+    - app.py
+    - .coverage
+    - .gitignore
+    - .flake8
+    - LICENSE
+    - pytest.ini
+    - README.md
+    - requirements.txt
+    - __init__.py

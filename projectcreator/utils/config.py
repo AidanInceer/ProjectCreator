@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from projectcreator.utils.handlers import PathHandler
 import yaml
 from yaml import SafeLoader
 
@@ -11,8 +12,10 @@ class DotNotationDict(dict):
 
 @dataclass
 class Config:
-    def create_config() -> DotNotationDict:
-        with open("config/base.yaml") as f:
+    path_handler: PathHandler
+
+    def create_config(path_handler: PathHandler) -> DotNotationDict:
+        with open(path_handler.config_path) as f:
             base_config = yaml.load(f, Loader=SafeLoader)
         config = DotNotationDict(base_config)
         return config
