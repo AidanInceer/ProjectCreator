@@ -19,3 +19,10 @@ class Config:
             base_config = yaml.load(f, Loader=SafeLoader)
         config = DotNotationDict(base_config)
         return config
+
+    def select(project_type: str, core_config):
+        if project_type == "FLASK":
+            config = core_config.flask_project['core']
+        else:
+            config = core_config.default_project['core']
+        return config

@@ -1,8 +1,5 @@
 default_project:
-  folder_base:
-    - .vscode:
-      - settings.json
-      - launch.json
+  core:
     - config:
       - config.yaml
     - data:
@@ -24,19 +21,17 @@ default_project:
         - __init__.py
     - tools:
       - __init__.py
-  file_base:
     - main.py
     - .coverage
     - .gitignore
     - .flake8
-    - LICENSE
     - pytest.ini
     - README.md
     - requirements.txt
     - __init__.py
 
 flask_project:
-  folder_base:
+  core:
     - src:
       - tests:
         - fixtures:
@@ -70,15 +65,10 @@ flask_project:
     - lib
     - logs
     - tools
-    - .vscode:
-      - settings.json
-      - launch.json
-  file_base:
     - app.py
     - .coverage
     - .gitignore
     - .flake8
-    - LICENSE
     - pytest.ini
     - README.md
     - requirements.txt
