@@ -27,15 +27,15 @@ if __name__ == "__main__":
     cloud_config = Config.select_cloud_provider(cloud_provider, core_config)
 
     # Builds project directory:
-    project_generator = Generate(path_handler, core_config)
+    project_generator = Generate(core_config)
     project_generator.create_directory(project_config, path)
 
     # Builds git provider additions:
-    git_generator = Generate(path_handler, core_config)
+    git_generator = Generate(core_config)
     git_generator.create_directory(git_config, path)
 
     # Builds cloud provider additions:
-    git_generator = Generate(path_handler, core_config)
+    git_generator = Generate(core_config)
     git_generator.create_directory(cloud_config, path)
 
     # Print created tree

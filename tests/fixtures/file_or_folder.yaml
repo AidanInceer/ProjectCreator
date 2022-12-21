@@ -1,0 +1,7 @@
+file_to_folders:
+  - .a
+  - .b
+
+folder_to_files:
+  - a
+  - b

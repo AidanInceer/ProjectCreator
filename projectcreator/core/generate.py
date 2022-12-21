@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from projectcreator.utils.handlers import PathHandler
 from projectcreator.utils.config import Config
 from projectcreator.utils.type import is_dict, is_list
 import os
@@ -8,7 +7,6 @@ from argparse import ArgumentParser
 
 @dataclass
 class Generate:
-    path_handler: PathHandler  # TODO: replace with directory
     config: Config
 
     def create_directory(self, directory: str | list | dict, path: str) -> None:
@@ -32,8 +30,8 @@ class Generate:
             self.create_file_or_folder(path, directory)
 
     def create_file_or_folder(self, dir_path: str, object: str | list | dict) -> None:
-        folders = self.config.file_to_folders
-        files = self.config.folder_to_files
+        folders = self.config['file_to_folders']
+        files = self.config['folder_to_files']
 
         # Does the path exists allready?
         if os.path.exists(f"{dir_path}{object}"):
