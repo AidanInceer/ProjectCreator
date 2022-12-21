@@ -5,7 +5,6 @@ from projectcreator.utils.type import is_dict, is_list
 import os
 
 
-
 @dataclass
 class Generate:
     path_handler: PathHandler  # TODO: replace with directory
@@ -32,8 +31,20 @@ class Generate:
             self.create_file_or_folder(path, directory)
 
     def create_file_or_folder(self, dir_path: str, object: str | list | dict) -> None:
+        folders = self.config.file_to_folders
+        files = self.config.folder_to_files
+
+        # Does the path exists allready?
         if os.path.exists(f"{dir_path}{object}"):
             pass
+
+        # Does the object not follow dotnotation file rules
+        if object in folders:
+            self.create_folder(dir_path, object)
+        elif object in files:
+            self.create_file(dir_path, object)
+
+        # Default file/folder check
         else:
             if self.is_file(object) == "None":
                 pass
@@ -65,6 +76,6 @@ class Generate:
         else:
             pass
 
-    @staticmethod 
+    @staticmethod
     def root_folder(path: str) -> None:
-        os.mkdir(f'{path}')
+        os.mkdir(f"{path}")

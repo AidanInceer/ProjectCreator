@@ -1,14 +1,19 @@
 default_project:
   core:
+    - .vscode:
+      - settings.json
+      - launch.json
     - config:
       - config.yaml
     - data:
       - database.db
     - docker:
       - Dockerfile
+      - .dockerignore
     - docs
     - lib
-    - logs
+    - logs:
+      - main.log
     - src:
       - tests:
         - fixtures:
@@ -23,6 +28,7 @@ default_project:
       - __init__.py
     - main.py
     - .coverage
+    - .gitattributes
     - .gitignore
     - .flake8
     - pytest.ini
@@ -30,8 +36,12 @@ default_project:
     - requirements.txt
     - __init__.py
 
+
 flask_project:
   core:
+    - .vscode:
+      - settings.json
+      - launch.json
     - src:
       - tests:
         - fixtures:
@@ -60,16 +70,53 @@ flask_project:
       - config.yaml
     - data:
       - database.db
-    - docker
+    - docker:
+      - Dockerfile
+      - .dockerignore
     - docs
     - lib
-    - logs
+    - logs:
+      - main.log
     - tools
     - app.py
     - .coverage
+    - .gitattributes
     - .gitignore
     - .flake8
     - pytest.ini
     - README.md
     - requirements.txt
     - __init__.py
+
+
+git_provider:
+  bitbucket:
+    - bitbucket-pipelines.yml
+  github:
+    - .github:
+      - workflows
+
+  azure_devops:
+    - azure-pipelines.yml
+  gitlab:
+    - .gitlab
+    - .gitlab-ci-yml
+  none:
+
+cloud_provider:
+  AWS:
+    - aws
+  GCP:
+    - gcp
+  AZURE:
+    - azure
+  none:
+
+
+file_to_folders:
+  - .github
+  - .gitlab
+  - .vscode
+
+folder_to_files:
+  - Dockerfile
