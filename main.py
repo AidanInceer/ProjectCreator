@@ -25,6 +25,11 @@ if __name__ == "__main__":
     # Choose git distributor (GITHUB, ADO, GITLAB, NONE) ❌
     # Choose Cloud Provider (AWS, GCP, AZURE, NONE) ❌
     # populate required files with necessary info ❌
-    # .xyz folders creation /smart file/folder detection (pull from set config list)
-
-
+    # .xyz folders creation /smart file/folder detection (pull from set config list) ❌
+    # Command line interface functionailty ❌
+    # tree creation of project ❌
+    # refactor code ❌
+    # doc strings ❌
+    # logging ❌
+    # dockerise ❌
+    # auto fill files with required things ❌

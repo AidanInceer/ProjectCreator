@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from projectcreator.utils.handlers import PathHandler
 from projectcreator.utils.config import Config
-from projectcreator.utils.type_checker import is_dict, is_list
+from projectcreator.utils.type import is_dict, is_list
 import os
 
 
@@ -60,7 +60,7 @@ class Generate:
     def create_file(path: str, file_name: str) -> str:
         if file_name is not None:
             file_path = path + file_name
-            with open(file_path, "x") as new_file:
+            with open(file_path, "x") as _:
                 pass
         else:
             pass
