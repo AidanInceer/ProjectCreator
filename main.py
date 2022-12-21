@@ -8,13 +8,13 @@ from projectcreator.utils.config import Config
 # Create subfolders ✅
 # Create core files ✅
 # create files in subfolders ✅
-# Choose git distributor (GITHUB, ADO, GITLAB, NONE) ❌
-# Choose Cloud Provider (AWS, GCP, AZURE, NONE) ❌
-# populate required files with necessary info ❌
-# .xyz folders creation /smart file/folder detection (pull from set config list) ❌
+# Choose git distributor (GITHUB, ADO, GITLAB, NONE) ✅
+# Choose Cloud Provider (AWS, GCP, AZURE, NONE) ✅
+# .xyz folders creation /smart file/folder detection (pull from set config list) ✅
+
 # Command line interface functionailty ❌
 # tree creation of project ❌
-# refactor code ❌
+# refactor code ➡️
 # doc strings ❌
 # logging ❌
 # dockerise ❌

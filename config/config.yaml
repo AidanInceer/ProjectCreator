@@ -95,7 +95,6 @@ git_provider:
   github:
     - .github:
       - workflows
-
   azure_devops:
     - azure-pipelines.yml
   gitlab:
