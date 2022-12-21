@@ -4,23 +4,6 @@ from projectcreator.utils.config import Config
 from projectcreator.core.args import get_arguments
 import os
 
-# TODO:
-# Choose project type ✅
-# Create base folders ✅
-# Create subfolders ✅
-# Create core files ✅
-# create files in subfolders ✅
-# Choose git distributor (GITHUB, ADO, GITLAB, NONE) ✅
-# Choose Cloud Provider (AWS, GCP, AZURE, NONE) ✅
-# .xyz folders creation /smart file/folder detection (pull from set config list) ✅
-# Command line interface functionailty ✅
-# tree creation of project ✅
-# refactor code ❌
-    # - doc strings
-# logging ❌
-# dockerise ❌
-# auto fill files with required things ❌
-
 
 if __name__ == "__main__":
     # Initialize classes and variables:
