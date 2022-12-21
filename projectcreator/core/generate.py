@@ -39,7 +39,7 @@ class Generate:
         if os.path.exists(f"{dir_path}{object}"):
             pass
 
-        # Does the object not follow dotnotation file rules
+        # Does the object follow dot notation file rules
         if object in folders:
             self.create_folder(dir_path, object)
         elif object in files:

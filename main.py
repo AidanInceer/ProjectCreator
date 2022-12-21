@@ -39,6 +39,6 @@ if __name__ == "__main__":
     git_generator.create_directory(cloud_config, path)
 
     # Print created tree
-    print('===========================================')
-    print(f'Directory {args.projectname} created at: {args.projectpath}')
-    os.system(rf'tree {path} /f')
+    print("===========================================")
+    print(f"Directory {args.projectname} created at: {args.projectpath}")
+    os.system(rf"tree {path} /f")

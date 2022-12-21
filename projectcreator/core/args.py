@@ -1,7 +1,10 @@
 from argparse import ArgumentParser
 
 
-def add_arguments(parser: ArgumentParser):
+def get_arguments() -> ArgumentParser:
+    parser = ArgumentParser(
+        description="Please enter: project name, path, project type, git_provider and cloud provider"
+    )
     parser.add_argument(
         "-n",
         "--projectname",
@@ -37,13 +40,4 @@ def add_arguments(parser: ArgumentParser):
         metavar="",
         required=True,
     )
-
-
-def get_arguments() -> ArgumentParser:
-    parser = ArgumentParser(
-        description="Please enter: project name, path, project type, git_provider and cloud provider"
-    )
-
-    add_arguments(parser)
-
     return parser.parse_args()
