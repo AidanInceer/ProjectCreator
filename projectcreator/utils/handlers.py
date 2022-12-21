@@ -41,11 +41,7 @@ class InputHandler:
     @staticmethod
     def cloud_provider():
         provider = (
-            str(
-                input(
-                    'Please Choose a project type: "AWS", "GCP", "AZURE", "none": '
-                )
-            )
+            str(input('Please Choose a project type: "AWS", "GCP", "AZURE", "none": '))
             .upper()
             .strip()
         )

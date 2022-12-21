@@ -111,7 +111,6 @@ cloud_provider:
     - azure
   none:
 
-
 file_to_folders:
   - .github
   - .gitlab

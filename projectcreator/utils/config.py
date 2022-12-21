@@ -32,7 +32,7 @@ class Config:
     @staticmethod
     def select_git_provider(git_type: str, core_config):
         if git_type == "GITHUB":
-            git_config = core_config.git_provider['github']
+            git_config = core_config.git_provider["github"]
         elif git_type == "ADO":
             git_config = core_config.git_provider["azure_devops"]
         elif git_type == "GITLAB":
@@ -44,7 +44,7 @@ class Config:
     @staticmethod
     def select_cloud_provider(cloud_type: str, core_config):
         if cloud_type == "AWS":
-            cloud_config = core_config.cloud_provider['AWS']
+            cloud_config = core_config.cloud_provider["AWS"]
         elif cloud_type == "GCP":
             cloud_config = core_config.cloud_provider["GCP"]
         elif cloud_type == "AZURE":
