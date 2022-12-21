@@ -3,6 +3,7 @@ from projectcreator.utils.handlers import PathHandler
 from projectcreator.utils.config import Config
 from projectcreator.utils.type import is_dict, is_list
 import os
+from argparse import ArgumentParser
 
 
 @dataclass
@@ -77,5 +78,7 @@ class Generate:
             pass
 
     @staticmethod
-    def root_folder(path: str) -> None:
+    def root_folder(args: ArgumentParser) -> None:
+        path = args.projectpath + "\\" + args.projectname + "\\"
         os.mkdir(f"{path}")
+        return path
