@@ -1,8 +1,11 @@
 from dataclasses import dataclass
-from projectcreator.utils.handlers import PathHandler
+
 import yaml
 from yaml import SafeLoader
+
+from projectcreator.utils.handlers import PathHandler
 from projectcreator.utils.logger import logger
+
 
 @dataclass
 class Config:
@@ -21,7 +24,7 @@ class Config:
         elif project_type == "DEFAULT":
             project_config = core_config["default_project"]["core"]
         else:
-            logger.critical('NOT A VALID PROJECT TYPE:')
+            logger.critical("NOT A VALID PROJECT TYPE:")
             raise AssertionError("Incorrect project type")
         return project_config
 
@@ -38,7 +41,7 @@ class Config:
         elif git_type == "NONE":
             git_config = {}
         else:
-            logger.critical('INVALID GIT PROVIDER')
+            logger.critical("INVALID GIT PROVIDER")
             raise AssertionError("Incompatible git provider")
         return git_config
 
@@ -53,6 +56,6 @@ class Config:
         elif cloud_type == "NONE":
             cloud_config = {}
         else:
-            logger.critical('INVALID CLOUD PROVIDER')
+            logger.critical("INVALID CLOUD PROVIDER")
             raise AssertionError("Incompatible cloud provider")
         return cloud_config

@@ -1,9 +1,10 @@
-from dataclasses import dataclass
-from projectcreator.utils.config import Config
-from projectcreator.utils.type import is_dict, is_list
-from projectcreator.utils.logger import logger
 import os
 from argparse import ArgumentParser
+from dataclasses import dataclass
+
+from projectcreator.utils.config import Config
+from projectcreator.utils.logger import logger
+from projectcreator.utils.type import is_dict, is_list
 
 
 @dataclass
@@ -46,7 +47,7 @@ class Generate:
 
         # Default file/folder check
         else:
-            if self.is_file(object) == "None":                      
+            if self.is_file(object) == "None":
                 pass
             if self.is_file(object):
                 self.create_file(dir_path, object)

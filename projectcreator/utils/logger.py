@@ -1,4 +1,5 @@
 import logging
+
 from colorama import Fore
 
 
@@ -16,7 +17,7 @@ class CustomFormatter(logging.Formatter):
         logging.INFO: white + format + reset,
         logging.WARNING: yellow + format + reset,
         logging.ERROR: light_red + format + reset,
-        logging.CRITICAL: red + format + reset
+        logging.CRITICAL: red + format + reset,
     }
 
     def format(self, record):
