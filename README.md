@@ -1,20 +1,21 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Project-Creator
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Introduction
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Sets up a project directory based on pre-defined project types, git and cloud providers.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Getting Started
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Download the repo.
+
+## Usage
+
+Run main.py with the required parameters:
+
+``` -h, --help           show this help message and exit
+-n , --projectname   Sets the root folder name of the project.
+-p , --projectpath   Sets Absolute path of project. e.g. 'c:/Users/projects'.
+-t , --projecttype   Sets the project type, choose from the following options: 'default', 'flask'.
+-g , --gitprovider   Sets the git provider for the project, choose from the following options: 'github', 'gitlab', 'ADO','bitbucket', 'none'.
+-c , --cloudtype     Sets the cloud provider for the project, choose from the following options: 'aws', 'gcp','azure', 'none'.
+```
