@@ -48,7 +48,4 @@ if __name__ == "__main__":
     logger.info(
         f"Adding {cloud_provider} files/folders to {args.projectname.title()} directory..."
     )
-
-    # Print created tree
-    os.system(rf"tree {path} /f")
     os.system(f"code {path}")
