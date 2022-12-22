@@ -26,7 +26,7 @@ if __name__ == "__main__":
     logger.info(f'Setting git provider: {git_provider}')
 
     # Sets cloud provider:
-    cloud_provider = args.cloudprovider.upper()
+    cloud_provider = args.cloudtype.upper()
     cloud_config = Config.select_cloud_provider(cloud_provider, core_config)
     logger.info(f'Setting cloud provider: {cloud_provider}')
 

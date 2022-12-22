@@ -8,35 +8,35 @@ def get_arguments() -> ArgumentParser:
     parser.add_argument(
         "-n",
         "--projectname",
-        help="Set the root folder name of the project.",
+        help="Sets the root folder name of the project.",
         metavar="",
         required=True,
     )
     parser.add_argument(
         "-p",
         "--projectpath",
-        help="Sets Absolute path of project.",
+        help="Sets Absolute path of project. e.g. 'c:/Users/projects'. ",
         metavar="",
         required=True,
     )
     parser.add_argument(
         "-t",
         "--projecttype",
-        help="Sets the project type e.g. 'default', 'flask' etc.",
+        help="Sets the project type, choose from the following options: 'default', 'flask'. ",
         metavar="",
         required=True,
     )
     parser.add_argument(
         "-g",
         "--gitprovider",
-        help="Sets the git provider for the project e.g. 'github', 'gitlab', 'none' etc",
+        help="Sets the git provider for the project, choose from the following options: 'github', 'gitlab', 'ADO','bitbucket', 'none'.",
         metavar="",
         required=True,
     )
     parser.add_argument(
         "-c",
-        "--cloudprovider",
-        help="Sets the cloud provider for the project e.g. 'aws', 'gcp', 'none etc",
+        "--cloudtype",
+        help="Sets the cloud provider for the project, choose from the following options: 'aws', 'gcp','azure', 'none'.",
         metavar="",
         required=True,
     )
