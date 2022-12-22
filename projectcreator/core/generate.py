@@ -4,7 +4,6 @@ from projectcreator.utils.type import is_dict, is_list
 from projectcreator.utils.logger import logger
 import os
 from argparse import ArgumentParser
-from colorama import Fore
 
 
 @dataclass
@@ -32,8 +31,8 @@ class Generate:
             self.create_file_or_folder(path, directory)
 
     def create_file_or_folder(self, dir_path: str, object: str | list | dict) -> None:
-        folders = self.config['file_to_folders']
-        files = self.config['folder_to_files']
+        folders = self.config["file_to_folders"]
+        files = self.config["folder_to_files"]
 
         # Does the path exists allready?
         if os.path.exists(f"{dir_path}{object}"):
@@ -47,7 +46,7 @@ class Generate:
 
         # Default file/folder check
         else:
-            if self.is_file(object) == "None":
+            if self.is_file(object) == "None":                      
                 pass
             if self.is_file(object):
                 self.create_file(dir_path, object)
@@ -65,13 +64,13 @@ class Generate:
 
     @staticmethod
     def create_folder(path: str, folder_name: str) -> str:
-        logger.debug(f'creating folder: {path}{folder_name}')
+        logger.debug(f"creating folder: {path}{folder_name}")
         folder_path = path + folder_name
         os.mkdir(folder_path)
 
     @staticmethod
     def create_file(path: str, file_name: str) -> str:
-        logger.debug(f'creating file: {path}{file_name}')
+        logger.debug(f"creating file: {path}{file_name}")
         if file_name is not None:
             file_path = path + file_name
             with open(file_path, "x") as _:
