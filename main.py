@@ -31,21 +31,22 @@ if __name__ == "__main__":
     logger.info(f'Setting cloud provider: {cloud_provider}')
 
     # Builds project directory:
-    logger.info(f'Building {project_type.title()} directory...')
+    logger.info(f'Building {args.projectname.title()} directory...')
     project_generator = Generate(core_config)
     project_generator.create_directory(project_config, path)
 
     # Builds git provider additions:
     git_generator = Generate(core_config)
     git_generator.create_directory(git_config, path)
-    logger.info(f'Adding {git_provider} to directory...')
+    logger.info(f'Adding {git_provider} files/folders to {args.projectname.title()} directory...')
 
     # Builds cloud provider additions:
     cloud_generator = Generate(core_config)
     cloud_generator.create_directory(cloud_config, path)
-    logger.info(f'Adding {cloud_provider} to directory...')
+    logger.info(f'Adding {cloud_provider} files/folders to {args.projectname.title()} directory...')
 
     # Print created tree
     print("===========================================")
     print(f"Directory {args.projectname} created at: {args.projectpath}")
     os.system(rf"tree {path} /f")
+    os.system(f'code {path}')
