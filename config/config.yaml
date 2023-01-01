@@ -24,6 +24,7 @@ default_project:
         - __init__.py
       - utils:
         - __init__.py
+        - logger.py
     - tools:
       - __init__.py
     - main.py
@@ -35,7 +36,6 @@ default_project:
     - README.md
     - requirements.txt
     - __init__.py
-
 
 flask_project:
   core:
@@ -60,6 +60,7 @@ flask_project:
         - layout.html
       - utils:
         - __init__.py
+        - logger.py
       - views:
         - views.py
       - auth.py
@@ -87,7 +88,6 @@ flask_project:
     - README.md
     - requirements.txt
     - __init__.py
-
 
 git_provider:
   bitbucket:
@@ -118,3 +118,10 @@ file_to_folders:
 
 folder_to_files:
   - Dockerfile
+
+boilerplate_files:
+  - .gitignore
+  - LICENSE
+  - logger.py
+  - python-app.yml
+  - settings.json

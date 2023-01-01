@@ -69,13 +69,20 @@ class Generate:
         folder_path = path + folder_name
         os.mkdir(folder_path)
 
-    @staticmethod
-    def create_file(path: str, file_name: str) -> str:
+    def create_file(self, path: str, file_name: str) -> str:
         logger.debug(f"creating file: {path}{file_name}")
         if file_name is not None:
+            boilerplate_files = self.config["boilerplate_files"]
+            print(boilerplate_files)
             file_path = path + file_name
-            with open(file_path, "x") as _:
-                pass
+            if file_name in boilerplate_files:
+                with open(f"./data/{file_name}", "r") as r_file:
+                    data = r_file.readlines()
+                with open(file_path, "w") as w_file:
+                    w_file.writelines(data)
+            else:
+                with open(file_path, "x") as _:
+                    pass
         else:
             pass
 
