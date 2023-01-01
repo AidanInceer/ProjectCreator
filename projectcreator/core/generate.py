@@ -73,7 +73,6 @@ class Generate:
         logger.debug(f"creating file: {path}{file_name}")
         if file_name is not None:
             boilerplate_files = self.config["boilerplate_files"]
-            print(boilerplate_files)
             file_path = path + file_name
             if file_name in boilerplate_files:
                 with open(f"./data/{file_name}", "r") as r_file:
@@ -87,7 +86,7 @@ class Generate:
             pass
 
     @staticmethod
-    def root_folder(args: ArgumentParser) -> None:
-        path = args.projectpath + "\\" + args.projectname + "\\"
+    def root_folder(project_path: str, project_name: str) -> None:
+        path = project_path + "\\" + project_name + "\\"
         os.mkdir(f"{path}")
         return path

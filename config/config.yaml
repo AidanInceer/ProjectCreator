@@ -94,7 +94,8 @@ git_provider:
     - bitbucket-pipelines.yml
   github:
     - .github:
-      - workflows
+      - workflows:
+        - actions.yml
   azure_devops:
     - azure-pipelines.yml
   gitlab:
@@ -123,5 +124,5 @@ boilerplate_files:
   - .gitignore
   - LICENSE
   - logger.py
-  - python-app.yml
+  - actions.yml
   - settings.json
