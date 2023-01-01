@@ -1,6 +1,8 @@
 import unittest
-from projectcreator.utils.config import Config
+
 import pytest
+
+from projectcreator.utils.config import Config
 
 
 class TestConfig(unittest.TestCase):
