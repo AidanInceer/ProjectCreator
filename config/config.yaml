@@ -37,6 +37,29 @@ default_project:
     - requirements.txt
     - __init__.py
 
+basic_project:
+  core:
+    - .vscode:
+      - settings.json
+    - data:
+      - database.db
+    - src:
+      - core:
+        - __init__.py
+      - utils:
+        - __init__.py
+    - tests:
+      - __init__.py
+    - main.py
+    - .coverage
+    - .gitattributes
+    - .gitignore
+    - .flake8
+    - pytest.ini
+    - README.md
+    - requirements.txt
+    - __init__.py
+
 flask_project:
   core:
     - .vscode:
