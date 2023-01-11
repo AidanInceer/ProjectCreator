@@ -12,7 +12,7 @@ if __name__ == '__main__':
             'Please enter the absolute path where you want to project to be created e.g C:/Users/ : '
         )
     )
-    project_name = str(input('Please enter a choose name e.g. example_project : '))
+    project_name = str(input('Please enter a project name e.g. example_project : '))
     project_type = str(
         input(
             'Please choose a project type from the following list (default, flask, basic, frontend): '
