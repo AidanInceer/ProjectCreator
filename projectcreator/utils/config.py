@@ -25,6 +25,8 @@ class Config:
             project_config = core_config['default_project']['core']
         elif project_type == 'BASIC':
             project_config = core_config['basic_project']['core']
+        elif project_type == 'FRONTEND':
+            project_config = core_config['front_end_portfolio']['core']
         else:
             logger.critical('NOT A VALID PROJECT TYPE:')
             raise AssertionError('Incorrect project type')

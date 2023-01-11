@@ -60,6 +60,33 @@ basic_project:
     - requirements.txt
     - __init__.py
 
+front_end_portfolio:
+  core:
+    - .vscode:
+      - settings.json
+    - project_1:
+      - index.html
+      - main.css
+      - index.js
+    - project_2:
+      - index.html
+      - main.css
+      - index.js
+    - project_3:
+      - index.html
+      - main.css
+      - index.js
+    - project_4:
+      - index.html
+      - main.css
+      - index.js
+    - project_5:
+      - index.html
+      - main.css
+      - index.js
+    - README.md
+
+
 flask_project:
   core:
     - .vscode:

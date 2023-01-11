@@ -14,7 +14,9 @@ if __name__ == '__main__':
     )
     project_name = str(input('Please enter a choose name e.g. example_project : '))
     project_type = str(
-        input('Please choose a project type from the following list (default, flask, basic): ')
+        input(
+            'Please choose a project type from the following list (default, flask, basic, frontend): '
+        )
     )
     git_provider = str(
         input(
