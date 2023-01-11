@@ -69,7 +69,7 @@ class Generate:
         os.mkdir(folder_path)
 
     def create_file(self, path: str, file_name: str) -> str:
-        logger.debug(f'creating file: {path}{file_name}')
+        # logger.debug(f"creating file: {path}{file_name}")
         if file_name is not None:
             boilerplate_files = self.config['boilerplate_files']
             file_path = path + file_name
