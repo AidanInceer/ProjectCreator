@@ -9,13 +9,25 @@
         "-p",
         "test_*.py"
     ],
-    "python.testing.pytestEnabled": false,
-    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
     "python.testing.pytestArgs": [
         "."
     ],
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
-    }
+    },
+    "editor.rulers": [89,120],
+    "sonarlint.rules": {
+        "python:S930":{
+            "level": "off"
+        },
+        "python:S107":{
+            "level": "off"
+        },
+        "python:S4792":{
+            "level": "off"
+        },
+    },
 }

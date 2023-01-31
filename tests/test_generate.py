@@ -196,9 +196,7 @@ class TestGenerateCreateFile(unittest.TestCase):
             unittest.mock.mock_open().return_value,
         ]
         self.generate.create_file(path, file_name)
-        expected_calls = [
-            unittest.mock.call('C:\\test\\file3', 'x')
-        ]
+        expected_calls = [unittest.mock.call('C:\\test\\file3', 'x')]
         mock_open.assert_has_calls(expected_calls)
 
     @patch('builtins.open')
