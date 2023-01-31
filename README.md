@@ -7,7 +7,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AidanInceer_ProjectCreator&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AidanInceer_ProjectCreator)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=AidanInceer_ProjectCreator&metric=coverage)](https://sonarcloud.io/summary/new_code?id=AidanInceer_ProjectCreator)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=AidanInceer_ProjectCreator&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=AidanInceer_ProjectCreator)
