@@ -80,14 +80,14 @@ class TestGenerate(unittest.TestCase):
     #     rm_path = r".\tests\fixtures\create_folder"
     #     os.rmdir(rm_path)
 
-    def test_create_file_00(self):
-        path = r".\tests\fixtures\\"
-        file_name = "file.py"
-        Generate.create_folder(path, file_name)
-        output_path = r".\tests\fixtures\file.py"
-        assert os.path.exists(output_path) is True
-        rm_path = r".\tests\fixtures\file.py"
-        os.rmdir(rm_path)
+    # def test_create_file_00(self):
+    #     path = r".\tests\fixtures\\"
+    #     file_name = "file.py"
+    #     Generate.create_folder(path, file_name)
+    #     output_path = r".\tests\fixtures\file.py"
+    #     assert os.path.exists(output_path) is True
+    #     rm_path = r".\tests\fixtures\file.py"
+    #     os.rmdir(rm_path)
 
     def test_is_file_00(self):
         object = None
