@@ -1,5 +1,12 @@
 # Project-Creator
 
+[![Build](https://github.com/AidanInceer/ProjectCreator/actions/workflows/build.yml/badge.svg)](https://github.com/AidanInceer/ProjectCreator/actions/workflows/build.yml)
+[![Lint](https://github.com/AidanInceer/ProjectCreator/actions/workflows/lint.yml/badge.svg)](https://github.com/AidanInceer/ProjectCreator/actions/workflows/lint.yml)
+[![Test](https://github.com/AidanInceer/ProjectCreator/actions/workflows/test.yml/badge.svg)](https://github.com/AidanInceer/ProjectCreator/actions/workflows/test.yml)
+[![Scan](https://github.com/AidanInceer/ProjectCreator/actions/workflows/scan.yml/badge.svg)](https://github.com/AidanInceer/ProjectCreator/actions/workflows/scan.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 ## Introduction
 
 Sets up a project directory based on pre-defined project types, git and cloud providers.
