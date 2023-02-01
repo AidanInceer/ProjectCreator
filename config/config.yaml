@@ -36,7 +36,6 @@ default_project:
     - README.md
     - requirements.txt
     - __init__.py
-    - sonar-project.properties
 
 basic_project:
   core:
@@ -60,7 +59,6 @@ basic_project:
     - README.md
     - requirements.txt
     - __init__.py
-    - sonar-project.properties
 
 front_end_portfolio:
   core:
@@ -140,7 +138,6 @@ flask_project:
     - README.md
     - requirements.txt
     - __init__.py
-    - sonar-project.properties
 
 git_provider:
   bitbucket:
@@ -152,6 +149,7 @@ git_provider:
         - test.yml
         - lint.yml
         - scan.yml
+    - sonar-project.properties
   azure_devops:
     - azure-pipelines.yml
   gitlab:
