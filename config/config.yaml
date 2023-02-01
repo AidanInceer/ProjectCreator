@@ -184,5 +184,7 @@ boilerplate_files:
   - test.yml
   - lint.yml
   - scan.yml
-  - sonar-project.proerties
+  - sonar-project.properties
   - settings.json
+  - README.md
+  - .flake8
